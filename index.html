@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow Lite</title>
+  <link rel="stylesheet" href="styles/utilities.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <h1>TaskFlow Lite</h1>
+    <p class="tagline">Your client-side task management solution</p>
+  </header>
+
+  <main>
+    <form id="task-form" class="task-form">
+      <input type="text" id="task-input" placeholder="Add a new task..." maxlength="100" required>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="task-list" class="task-list"></ul>
+
+    <div class="task-footer">
+      <div id="task-stats"></div>
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 TaskFlow Lite — Built with ❤️ in Vanilla JS</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
